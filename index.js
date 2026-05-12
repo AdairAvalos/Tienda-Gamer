@@ -1,4 +1,4 @@
-import { calcularEnvio } from "./envio.js";
+import { calcularEnvio } from "./envios.js";
 import { calcularDescuento } from "./descuentos.js";
 import { esVip } from "./vip.js";
 
