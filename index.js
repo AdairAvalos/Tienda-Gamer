@@ -1,14 +1,11 @@
+import { calcularEnvio } from "./envio.js";
+import { calcularDescuento } from "./descuentos.js";
+import { esVip } from "./vip.js";
 
+let nombre = "Adair";
+let cantProd = 10;
+let total = 479;
 
-let cantidad = Number(prompt("Ingresa la cantidad de productos:"));
-let total = Number(prompt("Ingresa el total de la compra:"));
-
-
-let envio = calcularEnvio(cantidad);
-let descuento = calcularDescuento(total);
-let vip = esVIP(cantidad, total);
-
-console.log("=== RESULTADOS ===");
-console.log(envio);
-console.log(descuento);
-console.log(vip);
+console.log(`Hola ${nombre}`);
+console.log(calcularEnvio(cantProd));
+console.log(esVip(cantProd, total));

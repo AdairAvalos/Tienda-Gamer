@@ -1,9 +1,10 @@
-function esVIP(cantidad, total) {
+export function esVip(cantProd, total) {
 
-  if (cantidad > 20 && total > 1000) {
-    console.log("El cliente es VIP");
-  } else {
-    console.log("El cliente NO es VIP");
-  }
+    if (cantProd > 20 && total > 1000) {
+        return "***Eres cliente VIP***";
 
-}
+    } else {
+        return "***No eres cliente VIP***";
+
+    }//else
+}//function esVip
